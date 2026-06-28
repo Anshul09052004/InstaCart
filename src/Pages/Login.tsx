@@ -67,28 +67,28 @@ function Login() {
               : "Create your account and start shopping."}
           </p>
 
-       
-         <button
-  type="button"
-  onClick={() => setIsLoginState(!isLoginState)}
-  className="text-gray-500 font-medium mb-6"
->
-  {isLoginState ? (
-    <>
-      Don't have an account?{" "}
-      <span className="text-green-500 font-semibold hover:underline">
-        Sign Up
-      </span>
-    </>
-  ) : (
-    <>
-      Already have an account?{" "}
-      <span className="text-green-500 font-semibold hover:underline">
-        Sign In
-      </span>
-    </>
-  )}
-</button>
+
+          <button
+            type="button"
+            onClick={() => setIsLoginState(!isLoginState)}
+            className="text-gray-500 font-medium mb-6"
+          >
+            {isLoginState ? (
+              <>
+                Don't have an account?{" "}
+                <span className="text-green-500 font-semibold hover:underline">
+                  Sign Up
+                </span>
+              </>
+            ) : (
+              <>
+                Already have an account?{" "}
+                <span className="text-green-500 font-semibold hover:underline">
+                  Sign In
+                </span>
+              </>
+            )}
+          </button>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-5">
@@ -154,7 +154,7 @@ function Login() {
               </div>
             </div>
 
-        
+
 
             {/* Submit */}
             <button
@@ -165,8 +165,8 @@ function Login() {
               {loading
                 ? "Please Wait..."
                 : isLoginState
-                ? "Sign In"
-                : "Sign Up"}
+                  ? "Sign In"
+                  : "Sign Up"}
             </button>
           </form>
         </div>
