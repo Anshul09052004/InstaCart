@@ -30,6 +30,7 @@ function Navbar() {
       navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
       setSearchQuery("");
     }
+  };
 
     return (
       <nav className="sticky top-0 z-50 bg-white shadow-sm border-b">
@@ -259,6 +260,6 @@ function Navbar() {
 
     );
   }
-}
+
 
 export default Navbar;

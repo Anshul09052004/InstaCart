@@ -1,11 +1,11 @@
-import React from 'react'
-import Navbar from '../Components/Navbar'
+import Navbar from '../Components/Navbar.tsx'
 
 function Home() {
   return (
     <div>
-      <Navbar />
-      <p>home</p>
+      
+    <Navbar/>
+     
     </div>
   )
 }
