@@ -1,13 +1,26 @@
-import Navbar from '../Components/Navbar.tsx'
+import CategoryData from "../Components/CategoryData";
+import Features from "../Components/Features";
+import Footer from "../Components/Footer";
+import Hero from "../Components/Hero";
+import Navbar from "../Components/Navbar";
+import Newsletter from "../Components/NewsLetter";
+import PopularProduct from "../Components/PopularProduct";
+
 
 function Home() {
   return (
-    <div>
-      
-    <Navbar/>
-     
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
+      <main>
+        <Hero />
+        <Features />
+        <CategoryData />
+        <PopularProduct />
+        <Newsletter />
+        <Footer />
+      </main>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
