@@ -1,3 +1,4 @@
+import Cart from "../Components/Cart";
 import CategoryData from "../Components/CategoryData";
 import Features from "../Components/Features";
 import Footer from "../Components/Footer";
@@ -18,6 +19,7 @@ function Home() {
         <PopularProduct />
         <Newsletter />
         <Footer />
+        <Cart />
       </main>
     </div>
   );
