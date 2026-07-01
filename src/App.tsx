@@ -12,11 +12,15 @@ import Addresses from './Pages/Addresses'
 import Home from './Pages/Home'
 import Products from './Pages/Products'
 import CheckOut from './Pages/CheckOut'
+import Navbar from './Components/Navbar'
+import Cart from './Components/Cart'
 
 function App() {
   return (
     <>
       <Toaster position='top-right' />
+      <Navbar />
+        <Cart />
       <Routes>
         <Route path='/login' element={<Login />} />
         <Route path='/' element={<Home />} />
