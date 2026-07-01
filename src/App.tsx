@@ -14,6 +14,7 @@ import Products from './Pages/Products'
 import CheckOut from './Pages/CheckOut'
 import Navbar from './Components/Navbar'
 import Cart from './Components/Cart'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path='/orders/:id' element={<OrderTracking />} />
         <Route path='/addresses' element={<Addresses />} />
       </Routes>
+       <Footer />
     </>
   )
 }

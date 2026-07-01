@@ -1,6 +1,5 @@
 import CategoryData from "../Components/CategoryData";
 import Features from "../Components/Features";
-import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import Newsletter from "../Components/NewsLetter";
 import PopularProduct from "../Components/PopularProduct";
@@ -16,7 +15,7 @@ function Home() {
         <CategoryData />
         <PopularProduct />
         <Newsletter />
-        <Footer />
+       
       
       </main>
     </div>
